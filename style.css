@@ -1,0 +1,50 @@
+/* ............
+----Import Google Font----
+............... */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-header {
+    background-color: black;
+    display: flex;
+    width: 1175;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.banner-text {
+    color: rgb(3, 188, 255);
+    padding-left: 100px;
+    padding-top: 70px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.title-text {
+    padding-bottom: 40px;
+}
+
+.text-button {
+    color: white;
+    background-color: rgb(3, 188, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.banner-image img {
+    width: 581px;
+    height: 600px;
+    padding-left: 50px;
+}
+
+/*-------
+ Top header Part End
+ -------- */
