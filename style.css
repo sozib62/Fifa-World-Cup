@@ -11,8 +11,8 @@ body {
 .top-header {
     background-color: black;
     display: flex;
-    width: 1175;
-    height: 600px;
+    width: 1175px;
+    height: 650px;
     margin: 0 auto;
 }
 
@@ -39,12 +39,357 @@ body {
     border-radius: 6px;
 }
 
+.text-button:hover {
+    background-color: red;
+
+}
+
+
 .banner-image img {
     width: 581px;
-    height: 600px;
+    height: 650px;
     padding-left: 50px;
 }
 
 /*-------
  Top header Part End
  -------- */
+
+/* --------
+ Blog Part Start
+ .......... */
+
+.blogs {
+    display: grid;
+    grid-template-columns: 300px repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 1175px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: #161616;
+    border-radius: 10px;
+    grid-row: 1 / -1;
+
+}
+
+.sidebar-button-1 {
+    padding-top: 26px;
+    margin-bottom: 30px;
+}
+
+.sidebar-button-1 button:hover {
+    background-color: rgb(3, 188, 255);
+}
+
+.sidebar-button-1 button {
+    border: none;
+    background: #DD0000;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.sidebar-button-2 {
+    margin-bottom: 30px;
+}
+
+.sidebar-button-2 button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.sidebar-button-2 button {
+    border: none;
+    background-color: rgb(3, 188, 255);
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px 42px;
+}
+
+.sidebar-button-3 {
+    margin-bottom: 30px;
+}
+
+.sidebar-button-3 button:hover {
+    background-color: rgb(16, 252, 4);
+}
+
+.sidebar-button-3 button {
+    border: none;
+    background-color: rgb(3, 188, 255);
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 15px 58px;
+}
+
+.blog {
+    width: 300px;
+    height: 340px;
+    border: 2px solid whitesmoke;
+
+}
+
+.container {
+    padding-left: 20px;
+}
+
+.blog-image img {
+    width: 290px;
+    height: 170px
+}
+
+.blog-button {
+    padding-top: 10px;
+}
+
+.blog-button button:hover {
+    background-color: #ff0000;
+}
+
+.blog-button button {
+    background-color: rgb(3, 188, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.blog-text {
+    padding-top: 5px;
+}
+
+.blog-icon {
+    display: flex;
+
+
+}
+
+.blog-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.chat {
+    margin-left: 40px;
+}
+
+/* -------
+Blog Part End
+......... */
+
+/*........
+ Invisible Buttom Style
+ ......... */
+
+.invisible-buttom {
+    text-align: center;
+    visibility: hidden;
+}
+
+.view {
+    margin-top: 50px;
+    border: none;
+    padding: 12px 29px;
+    background: #DD0000;
+    border-radius: 5px;
+}
+
+/* -------
+ Footer Part Start
+ ---------- */
+
+.footer-part {
+    background-color: #161616;
+    height: 180px;
+    width: 100%;
+    margin-top: 80px;
+    padding: 15px;
+}
+
+.footer-text {
+    color: rgb(3, 188, 255);
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 25px;
+}
+
+.footer-title:hover {
+    color: #DD0000;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-menu h4:hover {
+    color: #DD0000;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.fa-brands {
+    margin-right: 100px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.footer-icon a {
+    margin-top: 10px;
+}
+
+/* ......
+ Footer Part End
+ --------- */
+
+/* .........
+ Media Queries Part
+ ------- */
+
+@media only screen and (max-width: 575px) {
+
+    .top-header {
+        width: 334px;
+        height: 434px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-image img {
+        width: 80%;
+        height: 225px;
+        padding-left: 30px;
+
+    }
+
+    .banner-title {
+        font-size: 18px;
+    }
+
+    .title-text {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+
+    .banner-text {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 20px;
+
+    }
+
+    /* Blog Part Style  */
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 100%;
+        margin-left: 30px;
+
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .footer-part {
+        height: 320px;
+
+    }
+
+    .fa-brands {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-menu {
+        display: block;
+    }
+
+    .footer-icon {
+        margin-left: -60px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+    /* .....
+    Header style
+    ...... */
+    .top-header {
+        width: 760px;
+        height: 390px;
+        border-radius: 20px;
+        margin: 100px 0 0 250px;
+    }
+
+    .banner-image {
+
+        margin-top: 40px;
+        margin-right: 70px;
+    }
+
+    .banner-image img {
+
+        width: 100%;
+        height: 350px;
+    }
+
+    .banner-title {
+        font-size: 20px;
+    }
+
+    .title-text {
+        font-size: 16px;
+    }
+
+    .banner-text {
+
+        padding-left: 30px;
+    }
+
+    /*.......
+     Header Style End
+     ........ */
+
+    /* .......
+     Blog Style
+     ........ */
+    .blogs {}
+
+
+    /* ...........
+
+Onk Chesta Korsi kintu korte pari nai
+
+...........*/
+
+
+    .invisible-buttom {
+        visibility: visible;
+        margin-left: 580px;
+    }
+
+
+}
